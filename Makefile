@@ -58,7 +58,7 @@ postgres-create:
 # 	@echo 'Created at average_salary_hour on Full Snapshot Mode (Truncate)'
 # 	@echo '==========================================================='
 
-# spark: postgres-create spark-create
+spark: postgres-create spark-create
 
 spark-create:
 	@echo '__________________________________________________________'
@@ -118,8 +118,8 @@ spark-create:
 # 	@docker exec -it ${DIBIMBING_DE_POSTGRES_CONTAINER_NAME} psql -U ${DIBIMBING_DE_POSTGRES_ACCOUNT} -d ${DIBIMBING_DE_POSTGRES_DB} -f challenge_sql/load_bi.sql
 # 	@echo '==========================================================='
 
-# clean:
-# 	@bash ./helper/goodnight.sh
+clean:
+	@bash ./helper/goodnight.sh
 
 jupyter:
 	@echo '__________________________________________________________'
