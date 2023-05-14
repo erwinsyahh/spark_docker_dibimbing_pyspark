@@ -16,7 +16,7 @@ services:
     volumes:
       - ../challenge_sql:/challenge_sql
       - ../challenge_spark:/challenge_spark
-      - ../source_data:/source_data
+      - ../data:/data
     ports:
       - ${DIBIMBING_DE_POSTGRES_PORT}:5432
 
