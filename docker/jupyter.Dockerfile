@@ -6,3 +6,4 @@ RUN apt-get update && apt-get install -y \
 RUN curl https://jdbc.postgresql.org/download/postgresql-42.2.18.jar -o /opt/postgresql-42.2.18.jar
 COPY ./requirements.txt /opt/app/requirements.txt
 RUN pip install -r /opt/app/requirements.txt --no-cache-dir
+ENV JUPYTER_ALLOW_INSECURE_WRITES=1
