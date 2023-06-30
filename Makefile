@@ -76,7 +76,7 @@ challenge-spark:
 	@docker exec ${DIBIMBING_DE_SPARK_MASTER_CONTAINER_NAME} \
 		spark-submit \
 		--master spark://${DIBIMBING_DE_SPARK_MASTER_HOST_NAME}:${DIBIMBING_DE_SPARK_MASTER_PORT} \
-		/challenge_spark/call-rfm.py \
+		/challenge_spark/submission-test.py \
 
 kafka: kafka-create
 

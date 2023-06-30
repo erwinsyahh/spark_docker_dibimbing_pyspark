@@ -11,4 +11,3 @@ RUN curl https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-ka
 RUN curl https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar -o /opt/commons-pool2-2.11.1.jar
 COPY ./requirements.txt /opt/app/requirements.txt
 RUN pip install -r /opt/app/requirements.txt --no-cache-dir
-ENV JUPYTER_ALLOW_INSECURE_WRITES=1
